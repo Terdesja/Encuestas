@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+body{
+    background-image: url(../../img/wsp.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+main{
+    width: 100%;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.container-fluid{
+    
+    width: 100%;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    background-color: rgba(84, 112, 139, 0.5);
+    border-radius: 10px;
+    margin-top: -106px;
+}
+
+.flex-container{
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 15px 16px;
+    
+}
+header{
+    margin-top: 15px;
+    padding-top: 25px;
+    position: relative;
+    padding-left: 558px;
+}
+
+.container-fluid form{
+    padding: 42px ;
+}
+
+
+div #div2.flex-container h1{
+     padding-top: 14px;
+     margin-bottom: 20px;
+     padding-bottom: 19px;
+     padding-left: 155px;
+     font-size: 45px;
+}
+
+div #div3.flex-container {
+    padding-top: 17px;
+
+}
+ 
+div #div3.flex-container h1{
+    font-size: 46px;
+    text-align: center;
+}
+
+div #div4.flex-container{
+    padding-top: 18px 20px;
+    padding-left: 19px;
+}
+ 
+div #div4.flex-container input{
+   margin-left: 10px;
+}
+
+div #div5.flex-container{
+    padding-left: 19px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+div #div5.flex-container label{
+    padding-left: 3px;
+}
+
+div #div5.flex-container input[type="radio"]{
+    margin-left: 11px;
+}
+
+div #div6.flex-container{
+    padding-left: 19px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+div #div6.flex-container label{
+    padding-left: 3px;
+}
+
+div #div6.flex-container input[type="radio"]{
+    margin-left: 11px;
+}
+
+div #div7.flex-container{
+    padding-left: 19px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+div #div7.flex-container input{
+    margin-left: 10px;
+}
+
+div #div8.flex-container{
+    padding-left: 19px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+div #div8.flex-container input{
+    margin-left: 10px;
+}
+
+div #div9.flex-container{
+    padding-top: 10px;
+    padding-left: 19px;
+    padding-bottom: 5px;
+}
+
+div #div9.flex-container input{
+    margin-left: 10px;
+}
+
+div #div10.flex-container{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 19px;
+}
+
+div #div10.flex-container label{
+    padding-left: 5px;
+}
+
+div #div10.flex-container input[type="radio"]{
+    margin-left: 11px;
+}
+
+div #div11.flex-container{
+    padding-left: 19px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+div #div11.flex-container input[type="text"]{
+    margin-bottom: -27px;
+    margin-left: 101px;
+}
+
+div #div11.flex-container p{
+    margin-bottom: -23px;
+}
+
+div #div12.flex-container{
+    padding-left: 19px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+div #div12.flex-container input{
+    margin-left: 11px;
+}
+
+div #div13.flex-container{
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-left: 19px;
+    padding-bottom: 10px;
+}
+
+div #div13.flex-container input[type="radio"]{
+    margin-left: 11px;
+}
+
+div #div13.flex-container label{
+    padding-left: 5px;
+}
+
+div #div14.flex-container input{
+   margin-left: 5px;
+    
+}
+
+
+div #div15.flex-container{
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-left: 19px;
+    padding-bottom: 10px;
+}
+
+div #div15.flex-container label{
+ padding-left: 5px;
+}
+
+div #div15.flex-container input[type="radio"]{
+    margin-left: 11px;
+}
+
+div #div16.flex-container{
+    margin-top: 20px;
+    padding-left: 19px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+div #div16.flex-container input[type="radio"]{
+    margin-left: 11px;
+}
+
+div #div16.flex-container label{
+    padding-left: 5px;
+}
+
+div #div17.flex-container{
+    margin-top: 20px;
+    padding-left: 19px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+div #div17.flex-container input[type="select"]{
+    margin-left: 11px;
+}
+
+div #div18.flex-container{
+    margin-top: 20px;
+    padding-left: 19px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+div #div18.flex-container input[type="select"]{
+    margin-left: 11px;
+}
+
+div #div19.flex-container{
+    margin-top: 20px;
+    padding-left: 19px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+div #div19.flex-container input[type="radio"]{
+    margin-left: 11px;
+}
+
+div #div19.flex-container label{
+    padding-left: 5px;
+}
+
+div #div20.flex-container{
+    margin-top: 20px;
+    padding-left: 19px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+div #div20.flex-container input[type="radio"]{
+    margin-left: 11px;
+}
+
+div #div20.flex-container label{
+    padding-left: 5px;
+}
+
+div #div21.flex-container{
+    margin-top: 20px;
+    padding-left: 19px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+div #div21.flex-container label{
+    font-size: 15px;
+    padding-left: 5px;
+}
+
+div #div21.flex-container input[type="radio"]{
+    margin-left: 11px;
+}
+
+div #div21.flex-container p{
+    font-size: 30px;
+    margin-top: 0;
+    text-decoration: none;
+}
+
+div #div22.flex-container{
+    margin-top: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+div #div25.row{
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+div  #div26.col-md select{
+    margin-left: 11px;
+}
+
+div #div27.col-md select{
+    margin-left: 11px; 
+}
+
+div #div27.col-md{
+    margin-top: 10px;
+}
+
+div #div28.flex-container{
+    margin-top: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+div #div29.flex-container{
+    margin-top: 10px;
+    
+}
+
+div #div30.flex-container{
+    margin-top: 20px;
+    padding-left: 19px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+div #div38.flex-container{
+    margin-top: 20px;
+    padding-left: 19px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+div #div31.row{
+    margin-top: 15px;
+    padding-left: 19px;
+}
+
+div #div33.row{
+    margin-top: 15px;
+}
+
+div #div32.col-md input[type="radio"]{
+    margin-left: 11px;
+}
+
+div #div32.col-md label{
+    margin-left: 5px;
+}
+
+div #div35.col-md input[type="radio"]{
+    margin-left: 11px;
+
+}
+
+div #div35.col-md label{
+    margin-left: 5px;
+}
+
+div #div36.row{
+    margin-top: 15px;
+}
+
+div #div38.flex-container input[type="checkbox"]{
+    margin-top: 23px;
+    margin-left: 20px;
+}
+
+div #div38.flex-container p{
+    margin-top: -25px;
+    margin-left: 40px;
+    margin-bottom: 2rem;
+}
+
+div #div38.flex-container input[type="submit"]{
+    margin-top: 15px;
+    margin-left: 333px;
+}
+

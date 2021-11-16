@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assents/css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <img src="img/dasss.jpeg" alt="" srcset="" width="350" height="300">
+    </header>
+    <main class="form-group">
+        <div id="div1" class="container-fluid">
+        <form action="controller/guardar.php" method="POST">
+                <div id="div2" class="flex-container">
+                   <h1>Plan Barrio Nuevo Tricolor</h1>
+                </div>
+
+                <div id="div3" class="flex-container">
+                    <h1>Datos Personales</h1>
+                    <div id= "div4"class="flex-container">
+                        <h2>Ingrese Su Nombre</h2>
+                        <input type="text" name="name"  size="30" placeholder="Ingrese su nombre completo"  required>
+                    </div>
+    
+                    <div id="div5" class="flex-container">
+                        <h2>Nacionalidad</h2>
+                        <input type="radio" name="nacionalidad"  value="Venezolano" required=""><label for="">Venezolano</label>
+                        <input type="radio" name="nacionalidad"  value="Extranjero" required=""><label for="">Extranjero</label>
+                        
+                    </div>
+                    <div id="div6" class="flex-container">
+                        <h2>Eliga Su Sexualidad</h2>
+                        <input type="radio" name="sexo"  value="Masculino" required=""><label for="">Masculino</label>
+                        <input type="radio" name="sexo"  value="Femenino" required=""><label for="">Femenino</label>
+                        
+                        
+                    </div>
+    <!--Tipe="text" reemplazado por tipe="number" -->
+                    <div id="div7" class="flex-container">
+                        <h2>Ingrese su número de Cedula</h2>
+                        <input type="text" name="cedula"   required> 
+                    </div>
+    
+                    <div id="div8" class="flex-container">
+                        <h2>Fecha de Nacimiento </h2>
+                        <input type="date" name="fecha" id="" value= "yyyy-MM-dd"required>
+                        
+                    </div>
+    <!-- value sustituido por placeholder -->
+                    <div id="div9" class="flex-container">
+                        <h2>Pais de Nacimiento</h2>
+                        <input type="text" name="pais" placeholder="pais" required>
+                        
+                    </div>
+    
+                    <div id="div10" class="flex-container">
+                        <h2>Situacion Conyugal</h2>
+                        <input type="radio" name="conyugal"  value="Casado" required><label for="">Casado(a)</label>
+                        <input type="radio" name="conyugal"  value="Divorciado" required><label for="">Divorciado(a)</label>
+                        <input type="radio" name="conyugal"  value="Separado" required><label for="">Separado(a)</label>
+                        <input type="radio" name="conyugal"  value="Soltero" required><label for="">Soltero(a)</label>
+                        <input type="radio" name="conyugal"  value="Unido" required><label for="">Unido(a)</label>
+                        <input type="radio" name="conyugal"  value="Viudo" required><label for="">Viudo(a)</label>
+                        
+                        
+                    </div>
+     <!--Tipe="text" reemplazado por tipe="tel" -->
+                    <div id="div11" class="flex-container">
+                        <h2>Numeros de Telefonos</h2>
+                        <p>Telefono Fijo</p><input type="tel" name="telefono_fijo"  required>
+                        <p>Telefono movil</p><input type="tel" name="telefono_movil"  required>
+                        <p>Otros Telefono</p><input type="tel" name="otros_telefonos"  required>
+                        
+                    </div>
+                    <div id="div12" class="flex-container">
+                        <h2>Correo Electronico</h2>
+                        <input type="email" name="email" value="" size="30" placeholder="Ingrese su correo"  required>
+                    </div>
+                </div>
+                
+                <div id="div13" class="flex-container">
+                    <h1>¿Usted Pertenece a un Consejo Comunal?</h1>
+                    <input type="radio" name="consejoc" id="si" value="si" onclick="show2();" required><label for="">Si</label>
+                    <input type="radio" name="consejoc" id="no" value="no" onclick="hidden1(this);" required><label for="">No</label>
+                        <div id="div14" class="flex-container" style="display: none;">
+                            <h3>¿Cual?</h3>
+                            <input type="text" name="consejo" >
+                        </div>
+                </div>
+
+                <div id="div15" class="flex-container" style="display: none;">
+                    <h2>Tipo de Vivienda</h2>
+                    <input type="radio" name="vivienda" id="cas" value="Unifamiliar"  onclick="show3();" ><label for="">Unifamiliar (Casa)</label>
+                   <input type="radio" name="vivienda" id="edi" value="Multifamiliar" onclick="hidden2();" > <label for="">Multifamiliar (Edificio)</label>
+                </div>
+              
+                <div id="div16" class="flex-container" style="display: none;">
+                    <h1>¿Posee usted la titularidad del Terreno?</h1>
+                    <input type="radio" name="terreno" id="si" value="si"  onclick="show4();"><label for="">Si</label>
+                    <input type="radio" name="terreno" id="no" value="no" onclick="hidden3();" ><label for="">No</label>
+                </div>
+                <div id="div17" class="flex-container" style="display: none;">
+                    <h2>Condicion Actual De Su Vivienda?</h2>
+                    <select name="condicion" id="" onchange="condicionOnChange(this)">
+                        <option value="">Eliga una opcion</option>
+                        <option value="propia">Propia</option>
+                        <option value="alquilada">Alquilada</option>
+                        <option value="familiar">Familiar</option>
+                    </select>
+                </div>
+
+                <div id="div18" class="flex-container" style="display: none;">
+                    <h2>Material de Construccion de su Vivienda?</h2>
+                    <select name="material" id="" onchange="materialOnChange(this)">
+
+                        <option value="">Elegir una Material</option>
+                        <option value="zinc">Zinc</option>
+                        <option value="madera">Madera</option>
+                        <option value="bloque">Bloque</option>
+                        <option value="bahareque">Bahareque</option>
+                        <option value="adobe">Adobe</option>
+
+                    </select>
+                </div>
+
+                <div id="div19" class="flex-container" style="display: none;">
+                    <h3>Codiciones de la Estructura</h3>
+                    <input type="radio" name="estructura" value="Presenta Grietas" onclick="show5();"><label for="">Presenta Grietas.</label>
+                    <input type="radio" name="estructura" value="Paredes con Frisos" onclick="show5();"><label for="">Paredes con Frisos.</label>
+                    <input type="radio" name="estructura" value="Presenta Filtraciones" onclick="show5();"><label for="">Presenta Filtraciones.</label>
+                </div>
+
+                <div id="div20" class="flex-container" style="display: none;">
+                    <h2>Condiciones del Techo</h2>
+                    <input type="radio" name="techo" value="Platabanda" onclick="show6();"><label for="">Platabanda</label>
+                    <input type="radio" name="techo" value="Zinc" onclick="show6();"><label for="">Zinc</label>
+                    <input type="radio" name="techo" value="Acerolit" onclick="show6();"><label for="">Acerolit</label>
+                    <input type="radio" name="techo" value="Madera" onclick="show6();"><label for="">Madera</label>
+                </div>
+
+                <div id="div21" class="flex-container" style="display: none;">
+                    <h2>Condiciones General de la Vivienda</h2>
+                    <p>Puerta Principal</p>
+                    <input type="radio" name="puerta" value="Posee" id="si"  onclick="show7();"><label for="">Posee</label>
+                    <input type="radio" name="puerta" value="No Posee"  id="no"><label for="">No Posee</label>
+                    <div id="div22" class="flex-container" style="display: none;">
+                        <div id="div23" class="row" style="display: none;">
+                              <div id="div24" class="col-md" style="display: none;">
+                                  <h3>Condición</h3>
+                                  <input type="text" name="puerta_principal" id="">
+                              </div>
+                        </div>
+
+                        <div id="div25" class="row" style="display: none;">
+                            <div id="div26" class="col-md" style="display: none;">
+                                <h3>Cuantas habitaciones tiene su vivienda</h3>
+                                <select name="habitaciones" id="" onchange="habitacionesOnChange(this);">
+                                    <option value="">Eliga el numero de habitaciones</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4+</option>
+                                </select>
+                            </div>
+
+                            <div id="div27" class="col-md" style="display: none;">
+                                <h3>Cuantos baños tiene su vivienda</h3>
+                                 <select name="baños" id="">
+                                   <option value="">Eliga la cantidad </option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3+</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="div28" class="flex-container" style="display: none;">
+                        <h3>Ventanas</h3>
+                        <input type="radio" name="ventanas" id="posee" value="si" onclick="show8(this);" ><label>Posee</label>
+                        <input type="radio" name="ventanas" id="no posee" value="no" onclick="show9(this);" ><label>No Posee</label>
+                        <div id="div29" class="flex-container" style="display: none;">
+                            <h3>Condición</h3>
+                            <input type="text" name="ventanas_condicion" id="" value="" >
+                        </div>
+                    </div>
+                </div>
+
+                <div id="div30" class="flex-container" style="display: none;">
+                    <h3>En Su casa usted posee peceta y lavamanos?</h3>
+                    <div id="div31" class="row" style="display: none;">
+                        <div id="div32" class="col-md" style="display: none;">
+                            <h4>Poceta</h4>
+                            <input type="radio" name="poceta" id="si" value="posee" onclick="show10(this);" ><label>Posee</label>
+                            <input type="radio" name="poceta" id="no" value="no posee" onclick="hidden4(this);" ><label>No Posee</label>
+                            <div id="div33" class="row" style="display: none;">
+                                <div id="div34" class="col-sm" style="display: none;">
+                                    <label>Condición</label>
+                                    <input type="text" name="poceta_condicion" id="" >
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="div35" class="col-md" style="display: none;">
+                            <h4>Lavamanos</h4>
+                            <input type="radio" name="lavamanos" id="si " value="posee" onclick="show11(this);"><label>Posee</label>
+                            <input type="radio" name="lavamanos" id="no" value="no posee" onclick="hidden5(this);"><label>No Posee</label>
+                                <div id="div36" class="row" style="display: none;">
+                                    <div id="div37" class="col-sm" style="display: none;">
+                                        <label>Condición</label>
+                                        <input type="text" name="lavamanos_condicion" id="" >
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="div38" class="flex-container">
+                    <input type="checkbox" name="declaracion" id="" value="De acuerdo" required><p>NOTA: Declaro que la información suministrada en este encuesta es totalmente verdadera,<br>
+                    en caso de verificar personalmente y que no coincida algún item con la realidad será de exclusión inmediata del beneficio.</p>
+
+                    <input type="submit" name="Guardar" value="Guardar"> 
+                    <input type="reset" value="Cancelar">
+                </div>
+        </form>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+</body>
+</html>
